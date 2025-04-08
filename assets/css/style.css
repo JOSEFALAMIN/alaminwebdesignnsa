@@ -4,11 +4,12 @@
 ************************/
 
 :root{
-    --heading-color: #000;
-    --social-icon-bg: #ddd;
-    --social-icon-hover: #5B6A71;
-    --white-color: #fff;
-    --heading-hover-color: #2B6F7E;
+   --body-color: #E1D6C2;
+   --text-color: #000;
+   --input-bdr: #ddd;
+   --black-color: #1F1F1F;
+   --th-color: #012C3C;
+   --white-color: #fff;
 }
 *{
     margin: 0;
@@ -16,6 +17,8 @@
 }
 body{
     font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--body-color);
 }
 .container{
     max-width: 1140px;
@@ -26,77 +29,95 @@ a{
 }
 h2{
     font-size: 40px;
-    color: var(--heading-color);
 }
-.team-content h4{
-    color: var(--heading-color);
-}
+
 ul{
     list-style-type: none;
 }
-.social-icon ul{
-    display: inline-flex;
-    padding: 0;
+
+
+/*********************
+   Start  Contact Form Section Css
+*****************************************/
+.contactform-section{
+    padding: 60px 0;
 }
-.social-icon ul li a{
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    color: var(--text-color);
-    background-color: var(--social-icon-bg);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin: 0 8px;
+.contactform,
+.table-wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contactform h2{
+    margin: 10px 0;
+}
+.contactform label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contactform input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid var(--input-bdr);
+    border-radius: 4px;
+}
+.contactform input:focus-visible {
+    outline-offset: 0px;
+    outline: 0;
+}
+.dis-block{
+    display: block;
+    margin: 10px 0;
+}
+.contactform input[type="button" i]{
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--black-color);
     transition: .3s;
+}
+.contactform input[type="button" i]:hover{
+    background-color: var(--th-color);
+    color: var(--white-color);
 }
 
 /*********************
-    Team Section Css
-*******************************/
+   End  Contact Form Section Css
+****************************************/
 
-.team-section{
-    margin: 60px 0 60px 0;
+/*********************
+   Start Table Section Css
+****************************************/
+
+.table-section{
+    margin: 60px 0;
 }
-.team-section h1{
-    text-align: center;
-    margin: 40px 0;
-    text-transform: uppercase;
+.table-wrapper h2{
+    margin: 20px 0;
 }
-.team-wrapper{
-    display: flex;
-    gap: 20px;
-}
-.team-items{
-    width: 33.33%;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-.team-img img{
+.table-wrapper table{
     width: 100%;
-    height: auto;
 }
-.team-content{
-    background-color: #EEEEEE;
-    padding: 15px 20px;
-    margin-top: -4px;
+.table-wrapper table, th, td{
+    border: 1px solid var(--black-color);
+    border-collapse: collapse;
+    padding: 10px;
 }
-.team-content a h2{
-   text-transform: uppercase;
-}
-.team-content a h2:hover{
-    color: var(--heading-hover-color);
-    transition: .3s;
-}
-.team-content h4{
-    font-size: 16px;
-    padding: 10px 0;
-}
-.team-content p{}
-.team-content .social-icon{
-    margin: 30px 0;
-}
-.team-content .social-icon ul li a:hover{
-    background-color: var(--social-icon-hover);
+.table-wrapper tr th{
+    font-size: 18px;
+    font-weight: 600;
     color: var(--white-color);
+    background-color: var(--th-color);
+    text-align: center;
+    text-transform: capitalize;
 }
+.table-wrapper table tr{
+    text-align: center;
+}
+
+
+/*********************
+   Start Table Section Css
+****************************************/
+

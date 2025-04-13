@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 02</title>
+    <title>My Simple Profile page</title>
      <!-- Font Awesome Css-->
       <link rel="stylesheet" href="assets/css/all.css">
      <!-- Custom Css-->
@@ -11,119 +11,106 @@
 </head>
 <body>
 
-    <!-- Start Form Section -->
-
-    <section class="contactform-section">
+    <section class="profile-section">
         <div class="container">
-            <div class="contactform">
-                <h2>Contact Us</h2>
-                <form action="#">
-                    <label for="name">Your Name: </label>
-                    <input type="text" class="" id="" placeholder="Enter Your First Name" required>
-                    <input type="text" class="" id="" placeholder="Enter Your Last Name">
-                    <label for="fname">Your Father Name: </label>
-                    <input type="text" class="" id="" placeholder="Enter Your Father Name">
-                    <label for="mname">Your Mother Name: </label>
-                    <input type="text" class="" id="" placeholder="Enter Your Mother Name">
-                    <label for="email">Email Address: </label>
-                    <input type="email" class="" id="" placeholder="Enter Your Email Address" required>
-                    <label for="date">Date Of Bath: </label>
-                    <input type="date" id="birthday" name="birthday">
-                    <label for="bath">Place Of Bath: </label>
-                    <input type="text" class="" id="" placeholder="Enter Your Place Of Bath">
-                    <label for="nationality">Nationality: </label>
-                    <input type="text" class="" id="" placeholder="Enter Your Nationality">
-                    <label for="religion">Religion: </label>
-                    <input type="text" class="" id="" placeholder="Enter Your Religion">
-                    <label for="gender" class="dis-block">Gender: </label>
-                    <input type="checkbox" class="" id="" value="Male">
-                    <label for="male">Male </label>
-                    <input type="checkbox" class="" id="" value="Female">
-                    <label for="female">Female </label>
-                    <label for="meritalstatius" class="dis-block">Merital Status: </label>
-                    <input type="checkbox" class="" id="" value="Married">
-                    <label for="married">Married </label>
-                    <input type="checkbox" class="" id="" value="Unmarried">
-                    <label for="unmarried">Unmarried </label>
-                    <label for="nationalid" class="dis-block">Upload National Id: </label>
-                    <input type="file" class="" id="">
-                    <input type="button" value="submit">
-                </form><!-- Form -->
-            </div><!-- contactform-->
+                <h1>Assignment 01</h1>
+           <div class="profile-wrapper">
+                <div class="profile-items">
+                    <div class="profile-img">
+                        <img src="assets/images/profile-img1.jpg" alt="profile-img1">
+                    </div><!-- profile-img-->
+                    <div class="profile-content">
+                       <a href="https://www.facebook.com/alaminjs"> <h2><b>alamin</b></h2></a>
+                        <h4><i>Future Front-End-Developer</i></h4>
+                        <p>Front-End Developer is responsible for creating the visual and interactive elements of a website or web application that users directly interact with. They use a combination of technologies like HTML, CSS, and JavaScript to build user interfaces and ensure a smooth user experience.</p>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#" alt="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul><!-- ul -->
+                        </div><!-- social-icon -->
+                    </div><!-- profile-content -->
+                </div><!-- profile-items -->
+                <div class="profile-items">
+
+                    <!-- Start Ordered List -->
+
+                    <div class="ol-wrapper">
+                            <h5>Social Contact</h5>
+                        <ol class="social-contact">
+                            <li><a href="https://www.facebook.com/alaminjs" target="_blank">facebook</a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                            <li><a href="#">LinkIn</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ol>
+                    </div>
+
+                    <!-- End Ordered List -->
+
+                    <!-- Start Table -->
+
+                    <div class="table-wrapper">
+                        <table>
+                            <tr>
+                                <th>Id</th>
+                                <th>First Name</th>
+                                <th>Designation</th>
+                                <th>Gender</th>
+                                <th>Salary</th>
+                                <th>Alive</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Al amin</td>
+                                <td>Web Designer</td>
+                                <td>M</td>
+                                <td>30000</td>
+                                <td>yes</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Josef</td>
+                                <td>Back-End-Developer</td>
+                                <td>M</td>
+                                <td>30000</td>
+                                <td>yes</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Hasan</td>
+                                <td>Graphic Designer</td>
+                                <td>M</td>
+                                <td>30000</td>
+                                <td>yes</td>
+                            </tr>
+                        </table>
+                    </div><!-- table-wrapper -->
+
+                    <!-- End Table -->
+
+                    <!-- Start Form  -->
+
+                    <div class="contactform">
+                        <h2>Contact Us</h2>
+                        <form action="#">
+                            <input type="text" class="" id="" placeholder="Enter Your First Name" required>
+                            <input type="text" class="" id="" placeholder="Enter Your Last Name">
+                            <input type="email" class="" id="" placeholder="Enter Your Email Address" required>
+                            <textarea name="text" id="" placeholder="Enter Your Text Here"></textarea>
+                            <button>Sunmit</button>
+                        </form><!-- Form -->
+                    </div><!-- contactform-->
+
+                    <!-- End Form -->
+
+                </div><!-- profile-items -->
+
+           </div><!-- profile-wrapper -->
         </div><!-- container -->
-    </section><!-- contactform-section -->
-
-    <!-- End Form Section -->
-
-    <!-- Start Table Section -->
-
-    <section class="table-section">
-        <div class="container">
-            <div class="table-wrapper">
-                <h2>Table Design</h2>
-                <table>
-                    <tr>
-                        <th>Id</th>
-                        <th>First Name</th>
-                        <th>Designation</th>
-                        <th>Gender</th>
-                        <th>Salary</th>
-                        <th>Alive</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Al amin</td>
-                        <td>Web Designer</td>
-                        <td>M</td>
-                        <td>30000</td>
-                        <td>yes</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Josef</td>
-                        <td>Back-End-Developer</td>
-                        <td>M</td>
-                        <td>30000</td>
-                        <td>yes</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Jony</td>
-                        <td>Graphic Designer</td>
-                        <td>M</td>
-                        <td>30000</td>
-                        <td>yes</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Sabbir</td>
-                        <td>Degital Marketing</td>
-                        <td>M</td>
-                        <td>30000</td>
-                        <td>yes</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Mominul</td>
-                        <td>Wordpress Developer</td>
-                        <td>M</td>
-                        <td>30000</td>
-                        <td>yes</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Hasan</td>
-                        <td>CPA</td>
-                        <td>M</td>
-                        <td>30000</td>
-                        <td>yes</td>
-                    </tr>
-                </table>
-            </div><!-- table-wrapper -->
-        </div><!-- container -->
-    </section><!-- table-section -->
-
-    <!-- End Table Section -->
+    </section><!-- profile-section -->
     
 </body>
 </html>

@@ -4,12 +4,16 @@
 ************************/
 
 :root{
-   --body-color: #E1D6C2;
-   --text-color: #000;
-   --input-bdr: #ddd;
-   --black-color: #1F1F1F;
-   --th-color: #012C3C;
-   --white-color: #fff;
+    --heading-color: #000;
+    --social-icon-bg: #ddd;
+    --social-icon-hover: #D2DBE5;
+    --white-color: #fff;
+    --heading-hover-color: #2B6F7E;
+    --profile-items-bg: #49CAD5;
+    --icon-hover: #49CAD5;
+    --th-color: #012C3C;
+    --table-bdr: #dddddd8a;
+    --social-contact-bg: #012C3C;
 }
 *{
     margin: 0;
@@ -17,8 +21,6 @@
 }
 body{
     font-size: 16px;
-    color: var(--text-color);
-    background-color: var(--body-color);
 }
 .container{
     max-width: 1140px;
@@ -29,78 +31,147 @@ a{
 }
 h2{
     font-size: 40px;
+    color: var(--heading-color);
 }
-
+.profile-content h4{
+    color: var(--heading-color);
+}
 ul{
     list-style-type: none;
 }
-
+ol{
+    list-style-type: none;
+}
+.social-icon ul{
+    display: inline-flex;
+    padding: 0;
+}
+.social-icon ul li a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    color: var(--text-color);
+    background-color: var(--social-icon-bg);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    transition: .3s;
+}
 
 /*********************
-   Start  Contact Form Section Css
-*****************************************/
-.contactform-section{
-    padding: 60px 0;
+    profile Section Css
+*******************************/
+
+.profile-section{
+    margin: 60px 0 60px 0;
 }
-.contactform,
-.table-wrapper{
-    max-width: 600px;
-    margin: 0 auto;
+.profile-section h1{
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
 }
-.contactform h2{
-    margin: 10px 0;
+.profile-wrapper{
+    display: flex;
+    gap: 20px;
 }
-.contactform label{
+.profile-items{
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: var(--profile-items-bg);
+}
+.profile-img img{
+    width: 100%;
+    height: 580px;
+}
+.profile-content{
+    padding: 15px 20px;
+}
+.profile-content a h2{
+   text-transform: uppercase;
+}
+.profile-content a h2:hover{
+    color: var(--white-color);
+    transition: .3s;
+}
+.profile-content h4{
     font-size: 16px;
-    font-weight: 600;
+    padding: 10px 0;
+}
+.profile-content .social-icon{
+    margin: 30px 0;
+}
+.profile-content .social-icon ul li a:hover{
+    background-color: var(--social-icon-hover);
+    color: var(--icon-hover);
 }
 
-.contactform input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+/*******************
+        End Profile Section
+***************************************/
+
+/*******************
+        Start  Form Section
+***************************************/
+.contactform h2{
+    text-align: left;
+    margin: 20px 0 0 20px;
+    color: var(--text-color);
+}
+.contactform>form{
+    margin: 0 20px;
+    overflow: hidden;
+}
+.contactform input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]), textarea, button {
     width: 100%;
     padding: 15px;
     margin: 12px 0;
-    border: 1px solid var(--input-bdr);
+    border: 1px solid var(--white-color);
     border-radius: 4px;
+    box-sizing: border-box;
+}
+.contactform textarea{
+    height: 130px;
 }
 .contactform input:focus-visible {
     outline-offset: 0px;
     outline: 0;
 }
+.contactform textarea:focus-visible {
+    outline-offset: 0px;
+    outline: 0;
+}
+
 .dis-block{
     display: block;
     margin: 10px 0;
 }
-.contactform input[type="button" i]{
+.contactform button{
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
-    color: var(--black-color);
-    transition: .3s;
 }
-.contactform input[type="button" i]:hover{
-    background-color: var(--th-color);
+.contactform button:hover{
+    background-color: var(--social-icon-hover);
     color: var(--white-color);
 }
 
-/*********************
-   End  Contact Form Section Css
-****************************************/
+
+/*******************
+        End  Form Section
+***************************************/
 
 /*********************
    Start Table Section Css
 ****************************************/
-
-.table-section{
-    margin: 60px 0;
-}
-.table-wrapper h2{
-    margin: 20px 0;
-}
-.table-wrapper table{
-    width: 100%;
+.table-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 .table-wrapper table, th, td{
-    border: 1px solid var(--black-color);
+    border: 1px solid var(--table-bdr);
     border-collapse: collapse;
     padding: 10px;
 }
@@ -121,3 +192,42 @@ ul{
    Start Table Section Css
 ****************************************/
 
+/*********************
+   Start Ol Css
+****************************************/
+
+.ol-wrapper{
+    margin-top: 30px;
+}
+.ol-wrapper h5{
+    font-size: 40px;
+    text-align: left;
+    color: var(--text-color);
+    margin: 0 0 20px 20px;
+}
+.social-contact{
+    display: inline-flex;
+    gap: 15px;
+    overflow: hidden;
+}
+.social-contact li a{
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 18px;
+    padding: 8px 15px;
+    background: var(--social-contact-bg);
+    border-radius: 4px;
+    border: 1px solid var(--social-contact-bg);
+    transition: .3s;
+}
+.social-contact li a:hover{
+    background-color: transparent;
+    border: 1px solid var(--social-contact-bg);
+}
+
+
+
+
+/*********************
+   Start ol Css
+****************************************/
